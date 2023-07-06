@@ -1,0 +1,46 @@
+.testimonial-container {
+	max-width: 1280px;
+	margin: 20px auto;
+}
+
+.test-container {
+	display: flex;
+	gap: 20px;
+	margin: 20px 20px;
+}
+.test-box {
+	padding: 20px;
+	border: 1px solid skyblue;
+	border-radius: 15px;
+}
+
+.test-box img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background: #6766666b;
+}
+
+.fa-star {
+	color: goldenrod;
+}
+.test-box p {
+	padding: 20px 0px;
+}
+
+/* Media Query */
+@media screen and (max-width: 426px) {
+	.test-container {
+		flex-direction: column;
+		margin: 0px 20px;
+	}
+	.lead-des {
+		padding: 40px;
+	}
+}
+
+@media screen and (max-width: 769px) {
+}
+
+@media screen and (max-width: 1025px) {
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url('./assets/hero-cover.5.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10px 0px;
+}
+.logo {
+	color: white;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0px;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.menu {
+	display: flex;
+	align-items: baseline;
+	justify-content: baseline;
+	gap: 28px;
+}
+
+.menu li {
+	list-style: none;
+}
+.menu li a {
+	text-decoration: none;
+	letter-spacing: 1px;
+	color: white;
+}
+.getQoute {
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	background: #32d9e2;
+	border-radius: 5px;
+	cursor: pointer;
+	border: white;
+}
+.menu-icon {
+	display: none;
+}
+
+.bannerContainer {
+	height: 90vh;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+.bannerTitle {
+	font-size: 48px;
+}
+.bannerDescription {
+	margin: 20px 0px;
+}
+.getQoute2 {
+	padding: 10px;
+	border-radius: 15px;
+	border: none;
+	width: 125px;
+	cursor: pointer;
+}
+.learnMore {
+	padding: 10px;
+	border-radius: 15px;
+	border: none;
+	width: 125px;
+	cursor: pointer;
+}
+.formContainer {
+	color: black;
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+}
+.bookForm div {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+.input {
+	padding: 10px 5px;
+	border-radius: 5px;
+	border: none;
+	background: #a9a7a758;
+	outline: none;
+}
+.formBtn {
+	padding: 10px 5px;
+	border-radius: 5px;
+	border: none;
+	background: #1ca7d5c2;
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/* Media Query */
+@media screen and (max-width: 426px) {
+	header {
+		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('./assets/2nd-banner.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		padding: 10px 0px;
+	}
+	nav {
+		padding: 10px;
+	}
+	.menu {
+		display: none;
+		position: absolute;
+		right: 10px;
+		top: 40px;
+		background-color: rgb(43, 128, 189);
+		padding: 10px;
+	}
+	.menu li {
+		row-gap: 10px;
+		margin-top: 10px;
+	}
+	.menu li a {
+		color: white;
+	}
+
+	.menu li a:hover {
+		color: rgb(235, 11, 216);
+	}
+	.getQoute {
+		display: none;
+	}
+	.menu-icon {
+		display: flex;
+		gap: 20px;
+	}
+	.bannerContainer {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		margin-top: 60px;
+	}
+	.bannerTitle {
+		text-align: center;
+	}
+	.bannerDescription {
+		text-align: center;
+	}
+	.formContainer {
+		margin-top: 30px;
+		width: 300px;
+	}
+	.banner-btn {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	header {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 1025px) {
+	header {
+		padding: 10px;
+	}
+}
